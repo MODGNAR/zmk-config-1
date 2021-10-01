@@ -33,7 +33,7 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (MakerDiary southpaw75)
+      - name: West Build (Nomeon southpaw75)
         run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=southpaw75 -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Nomeon southpaw75 DTS File
         if: ${{ always() }}
